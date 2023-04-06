@@ -1,0 +1,24 @@
+* {
+  background-color: thistle;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.addbtn {
+  padding: 5px;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  color: white;
+}
+
+#input {
+  border-radius: 10px;
+  border-color: rgb(255, 255, 255);
+  color: white;
+}
