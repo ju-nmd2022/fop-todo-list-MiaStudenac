@@ -1,5 +1,79 @@
 * {
   background-color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+input {
+  background-color: white;
+}
+
+.checklistIcon {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  position: absolute;
+  margin-top: -350px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+
+  background-color: rgb(255, 255, 255);
+  width: 450px;
+  height: 600px;
+
+  margin: auto;
+  margin-bottom: -100px;
+
+  border-radius: 60px;
+}
+
+#listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+#inputField {
+  border-radius: 15px;
+  border-color: rgb(0, 0, 0);
+  padding: 5px;
+  background-color: white;
+}
+
+.addbtn {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  border-radius: 20px;
+  padding: 5px;
+  stroke: black;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  color: white;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+/*
+
+* {
+  background-color: rgb(0, 0, 0);
   justify-content: center;
   font-family: sans-serif;
 }
@@ -53,3 +127,15 @@ ul {
 li:hover {
   cursor: pointer;
 }
+
+
+HTML PART
+<div class="input-container">
+  <img src="checklist.png" alt="checklistIcon" class="checklistIcon" />
+  <input type="text" id="inputField" placeholder="Add a task" />
+  <button class="addbtn" onclick="createToDo()">➕</button>
+  <ul list-style-type: none; id="listForTasks"></ul>
+
+
+
+*/

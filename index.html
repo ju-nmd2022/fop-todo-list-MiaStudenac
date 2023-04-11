@@ -9,11 +9,16 @@
     <script src="todolist.js"></script>
   </head>
   <body>
-    <div class="input-container">
-      <img src="checklist.png" alt="checklistIcon" class="checklistIcon" />
-      <input type="text" name="" id="inputField" />
-      <button class="addbtn" onclick="addTask()">➕</button>
-      <ul id="listForTasks"></ul>
+    <div class="container">
+      <div class="input-container">
+        <img src="checklist.png" alt="checklistIcon" class="checklistIcon" />
+        <input id="inputField" type="text" placeholder="Add a task here" />
+        <button class="addbtn" onclick="createToDo()">➕</button>
+      </div>
+
+      <div id="listContainer">
+        <ul list-style-type: none; id="listForTasks"></ul>
+      </div>
     </div>
   </body>
 </html>
