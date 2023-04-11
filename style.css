@@ -75,8 +75,42 @@ input {
   margin-top: -240px;
 }
 
+/* asked chat gpt to help me decorate the task list as i had some issues*/
+
 ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+}
+
+li {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+#listForTasks li span {
+  flex-grow: 1;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#listForTasks li button {
+  flex-shrink: 0;
+  color: black;
+  border: none;
+  background-color: black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+li:hover {
+  cursor: pointer;
 }
