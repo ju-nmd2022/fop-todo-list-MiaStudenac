@@ -1,11 +1,20 @@
 * {
-  background-color: rgb(0, 0, 0);
   font-family: sans-serif;
   justify-content: center;
+  box-sizing: border-box;
+  margin: 10px;
 }
 
 input {
   background-color: white;
+}
+
+.myheader {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 200px;
+  margin-top: 60px;
 }
 
 .checklistIcon {
@@ -13,7 +22,7 @@ input {
   width: 80px;
   background-color: white;
   position: absolute;
-  margin-top: -350px;
+  margin-top: -470px;
 }
 
 .input-container {
@@ -23,14 +32,10 @@ input {
   justify-content: center;
   padding: 10px;
   gap: 10px;
-
   background-color: rgb(255, 255, 255);
-  width: 450px;
+  width: 350px;
   height: 600px;
-
-  margin: auto;
-  margin-bottom: -100px;
-
+  margin: 0 auto;
   border-radius: 60px;
 }
 
@@ -39,6 +44,18 @@ input {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  margin-top: -400px;
+}
+
+#listForTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
 }
 
 #inputField {
@@ -46,6 +63,7 @@ input {
   border-color: rgb(0, 0, 0);
   padding: 5px;
   background-color: white;
+  margin-top: -240px;
 }
 
 .addbtn {
@@ -54,6 +72,7 @@ input {
   border-radius: 20px;
   padding: 5px;
   stroke: black;
+  margin-top: -240px;
 }
 
 ul {
@@ -61,82 +80,3 @@ ul {
   display: flex;
   flex-direction: column;
 }
-
-li {
-  color: white;
-  background-color: white;
-}
-
-li:hover {
-  cursor: pointer;
-}
-
-/*
-
-* {
-  background-color: rgb(0, 0, 0);
-  justify-content: center;
-  font-family: sans-serif;
-}
-
-.checklistIcon {
-  height: 80px;
-  width: 80px;
-  background-color: white;
-  position: absolute;
-  margin-top: -350px;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-
-  background-color: rgb(255, 255, 255);
-  width: 450px;
-  height: 600px;
-
-  margin: auto;
-
-  border-radius: 60px;
-}
-
-.addbtn {
-  background-color: rgb(0, 0, 0);
-  color: black;
-  border-radius: 20px;
-  padding: 5px;
-  stroke: black;
-  margin-top: -180px;
-}
-
-#inputField {
-  border-radius: 15px;
-  border-color: rgb(0, 0, 0);
-  padding: 5px;
-  margin-left: 60px;
-  background-color: white;
-  margin-top: -180px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li:hover {
-  cursor: pointer;
-}
-
-
-HTML PART
-<div class="input-container">
-  <img src="checklist.png" alt="checklistIcon" class="checklistIcon" />
-  <input type="text" id="inputField" placeholder="Add a task" />
-  <button class="addbtn" onclick="createToDo()">➕</button>
-  <ul list-style-type: none; id="listForTasks"></ul>
-
-
-
-*/
