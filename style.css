@@ -64,6 +64,7 @@ ul {
 
 li {
   color: white;
+  background-color: white;
 }
 
 li:hover {

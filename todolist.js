@@ -17,3 +17,9 @@ function createToDo() {
   updateList();
   saveTasksToLocalStorage();
 }
+function taskDone(index) {
+  let inputField = tasks[index];
+  inputField.done = !inputField.done;
+  updateList();
+  saveTasksToLocalStorage();
+}
