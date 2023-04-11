@@ -1,8 +1,20 @@
+//with help of my dad
+//asked chat gpt for help with a few issues
+//some study guides: https://www.tutorialstonight.com/to-do-list-javascript, https://freshman.tech/todo-list/
+
 let tasks = [];
+
+//checks for an item tasks in the browser's local storage
+//then analyzes its value as a json string
 
 if (localStorage.getItem("tasks")) {
   tasks = JSON.parse(localStorage.getItem("tasks"));
 }
+
+//new function called
+//a task gets assigned to an input field and resets the value to an empty string
+//task is added to tasks array
+//the list gets updated and saved to local storage
 
 function createToDo() {
   let input = document.getElementById("inputField");
@@ -17,12 +29,23 @@ function createToDo() {
   updateList();
   saveTasksToLocalStorage();
 }
+
+//user marks a specific task as done
+//an index parameter is taken from the tasks array
+//the property done gets toggled
+//list updates and saves to local storage
+
 function taskDone(index) {
   let inputField = tasks[index];
   inputField.done = !inputField.done;
   updateList();
   saveTasksToLocalStorage();
 }
+
+//a function is called whenever the page refreshes or whenever the tasks change
+//displays an html element, the task list
+//loops and creates a new element whenever a task is added
+//each element contains a delete button and a li element
 
 function updateList() {
   let listForTasks = document.getElementById("listForTasks");
