@@ -1,6 +1,7 @@
 * {
   background-color: rgb(0, 0, 0);
   justify-content: center;
+  font-family: sans-serif;
 }
 
 .checklistIcon {
@@ -19,8 +20,8 @@
   gap: 10px;
 
   background-color: rgb(255, 255, 255);
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 600px;
 
   margin: auto;
 
@@ -43,4 +44,12 @@
   margin-left: 60px;
   background-color: white;
   margin-top: -180px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
 }
