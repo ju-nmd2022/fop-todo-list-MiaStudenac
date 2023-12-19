@@ -1,19 +1,6 @@
 * {
   font-family: sans-serif;
   justify-content: center;
-  background-color: white;
-}
-
-body {
-  background-color: white;
-}
-
-image {
-  background-color: white;
-}
-
-input {
-  background-color: white;
 }
 
 .myheader {
@@ -27,7 +14,7 @@ input {
 .checklistIcon {
   height: 80px;
   width: 80px;
-  background-color: white;
+
   position: absolute;
   margin-top: -470px;
 }
@@ -38,7 +25,7 @@ input {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: rgb(255, 255, 255);
+
   height: 600px;
   margin: 0 auto;
 }
@@ -66,7 +53,7 @@ input {
   border-radius: 15px;
   border-color: rgb(0, 0, 0);
   padding: 5px;
-  background-color: white;
+
   margin-top: -240px;
 }
 
@@ -94,7 +81,6 @@ li {
   align-items: center;
   width: 100%;
   margin-bottom: 1px;
-  background-color: rgb(255, 255, 255);
 }
 
 #listForTasks li span {
