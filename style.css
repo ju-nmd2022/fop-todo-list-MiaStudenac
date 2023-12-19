@@ -1,8 +1,6 @@
 * {
   font-family: sans-serif;
   justify-content: center;
-  box-sizing: border-box;
-  margin: 10px;
 }
 
 input {
@@ -30,13 +28,10 @@ input {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   gap: 10px;
   background-color: rgb(255, 255, 255);
-  width: 350px;
   height: 600px;
   margin: 0 auto;
-  border-radius: 60px;
 }
 
 #listContainer {
