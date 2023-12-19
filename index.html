@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="todolist.js"></script>
+  </head>
+  <body>
+    <img src="personalized-header.png" alt="myheader" class="myheader" />
+    <div class="container">
+      <div class="input-container">
+        <img src="checklist.png" alt="checklistIcon" class="checklistIcon" />
+        <input id="inputField" type="text" placeholder="Add a task here <3" />
+        <button class="addbtn" onclick="createToDo()">➕</button>
+      </div>
+
+      <div id="listContainer">
+        <ul list-style-type: none; id="listForTasks"></ul>
+      </div>
+    </div>
+  </body>
+</html>

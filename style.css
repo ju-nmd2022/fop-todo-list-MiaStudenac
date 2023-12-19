@@ -1,0 +1,106 @@
+* {
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.myheader {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 200px;
+  margin-top: 60px;
+}
+
+.checklistIcon {
+  height: 80px;
+  width: 80px;
+
+  position: absolute;
+  margin-top: -470px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  height: 600px;
+  margin: 0 auto;
+}
+
+#listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  padding: 20px;
+  margin-top: -400px;
+}
+
+#listForTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+#inputField {
+  border-radius: 15px;
+  border-color: rgb(0, 0, 0);
+  padding: 5px;
+
+  margin-top: -240px;
+}
+
+.addbtn {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  border-radius: 20px;
+  padding: 5px;
+  stroke: black;
+  margin-top: -240px;
+}
+
+/* asked chat gpt to help me decorate the task list as i had some issues*/
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+#listForTasks li span {
+  flex-grow: 1;
+  color: black;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#listForTasks li button {
+  flex-shrink: 0;
+  color: black;
+  border: none;
+  background-color: black;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+li:hover {
+  cursor: pointer;
+}
